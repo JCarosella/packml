@@ -7,29 +7,15 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
 )
 
-set(packml_ros_SRCS
-  src/packml_ros.cpp
-)
-
-set(packml_ros_HDRS
-  include/packml_ros/packml_ros.h
-)
-
-set(packml_ros_INCLUDE_DIRECTORIES
-  include
-  ${catkin_INCLUDE_DIRS}
-  ${CMAKE_CURRENT_BINARY_DIR}
-)
-
 catkin_package(
-  INCLUDE_DIRS ${packml_ros_INCLUDE_DIRECTORIES}
+  INCLUDE_DIRS include
   LIBRARIES ${PROJECT_NAME}
   CATKIN_DEPENDS packml_msgs packml_sm roscpp
   DEPENDS
 )
 
-include_directories(${packml_ros_INCLUDE_DIRECTORIES} ${catkin_INCLUDE_DIRS})
-add_library(${PROJECT_NAME} ${packml_ros_SRCS})
+include_directories(include ${catkin_INCLUDE_DIRS})
+add_library(${PROJECT_NAME} src/packml_ros.cpp)
 target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES})
 target_compile_options(${PROJECT_NAME} PUBLIC -std=c++11)
 
