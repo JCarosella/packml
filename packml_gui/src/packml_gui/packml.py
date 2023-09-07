@@ -56,8 +56,8 @@ class Packml(Plugin):
                       help="Put plugin in silent mode")
         args, unknowns = parser.parse_known_args(context.argv())
         if not args.quiet:
-            print 'arguments: ', args
-            print 'unknowns: ', unknowns
+            print(f'arguments: {args}')
+            print(f'unknowns: {unknowns}')
 
         # Create QWidget
         self._widget = QWidget()
