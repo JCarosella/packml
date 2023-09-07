@@ -65,67 +65,67 @@ bool PackmlStateMachine<T>::deactivate()
 template <typename T>
 bool PackmlStateMachine<T>::setStarting(std::function<int()> state_method)
 {
-  this->setStateMethod(StatesEnum::STARTING, state_method);
+  return this->setStateMethod(StatesEnum::STARTING, state_method);
 }
 
 template <typename T>
 bool PackmlStateMachine<T>::setExecute(std::function<int()> state_method)
 {
-  this->setStateMethod(StatesEnum::EXECUTE, state_method);
+  return this->setStateMethod(StatesEnum::EXECUTE, state_method);
 }
 
 template <typename T>
 bool PackmlStateMachine<T>::setCompleting(std::function<int()> state_method)
 {
-  this->setStateMethod(StatesEnum::COMPLETING, state_method);
+  return this->setStateMethod(StatesEnum::COMPLETING, state_method);
 }
 
 template <typename T>
 bool PackmlStateMachine<T>::setAborting(std::function<int()> state_method)
 {
-  this->setStateMethod(StatesEnum::ABORTING, state_method);
+  return this->setStateMethod(StatesEnum::ABORTING, state_method);
 }
 
 template <typename T>
 bool PackmlStateMachine<T>::setClearing(std::function<int()> state_method)
 {
-  this->setStateMethod(StatesEnum::CLEARING, state_method);
+  return this->setStateMethod(StatesEnum::CLEARING, state_method);
 }
 
 template <typename T>
 bool PackmlStateMachine<T>::setStopping(std::function<int()> state_method)
 {
-  this->setStateMethod(StatesEnum::STOPPING, state_method);
+  return this->setStateMethod(StatesEnum::STOPPING, state_method);
 }
 
 template <typename T>
 bool PackmlStateMachine<T>::setResetting(std::function<int()> state_method)
 {
-  this->setStateMethod(StatesEnum::RESETTING, state_method);
+  return this->setStateMethod(StatesEnum::RESETTING, state_method);
 }
 
 template <typename T>
 bool PackmlStateMachine<T>::setSuspending(std::function<int()> state_method)
 {
-  this->setStateMethod(StatesEnum::SUSPENDING, state_method);
+  return this->setStateMethod(StatesEnum::SUSPENDING, state_method);
 }
 
 template <typename T>
 bool PackmlStateMachine<T>::setUnsuspending(std::function<int()> state_method)
 {
-  this->setStateMethod(StatesEnum::UNSUSPENDING, state_method);
+  return this->setStateMethod(StatesEnum::UNSUSPENDING, state_method);
 }
 
 template <typename T>
 bool PackmlStateMachine<T>::setHolding(std::function<int()> state_method)
 {
-  this->setStateMethod(StatesEnum::HOLDING, state_method);
+  return this->setStateMethod(StatesEnum::HOLDING, state_method);
 }
 
 template <typename T>
 bool PackmlStateMachine<T>::setUnholding(std::function<int()> state_method)
 {
-  this->setStateMethod(StatesEnum::UNHOLDING, state_method);
+  return this->setStateMethod(StatesEnum::UNHOLDING, state_method);
 }
 
 template <typename T>

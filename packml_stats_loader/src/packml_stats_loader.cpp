@@ -94,6 +94,8 @@ namespace packml_stats_loader
     }
 
     bag.close();
+
+    return packml_msgs::Stats();
   }
 
   void PackmlStatsLoader::writeStats(const packml_msgs::GetStats::Response& get_stats_response)
