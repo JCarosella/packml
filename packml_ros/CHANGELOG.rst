@@ -2,6 +2,10 @@
 Changelog for package packml_ros
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1001.0.0 (2023-12-10)
+---------------------
+* Initial noetic tag
+
 1000.3.2 (2020-06-15)
 ---------------------
 * [Fix] Added missing throughput and cycle count to populateStatsMsg
